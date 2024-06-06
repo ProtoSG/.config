@@ -7,8 +7,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = "GentlemanNotes",
-        path = "/mnt/c/Users/dgocr/obsidian/pogosg-notes/",
+        name = "pogosg-notes",
+        path = "~/obsidian/pogosg-notes/",
       },
     },
     completion = {
@@ -84,7 +84,7 @@ return {
     end,
 
     templates = {
-      subdir = "Templates",
+      subdir = "templates",
       date_format = "%Y-%m-%d-%a",
       gtime_format = "%H:%M",
       tags = "",

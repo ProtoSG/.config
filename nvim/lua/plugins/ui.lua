@@ -8,7 +8,7 @@ return {
           event = "notify",
           find = "No information available",
         },
-        opts = { skip = true },
+        sopts = { skip = true },
       })
       local focused = true
       vim.api.nvim_create_autocmd("FocusGained", {

@@ -64,6 +64,15 @@ vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<CR>", { desc = "Search Ob
 vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "Quick Switch" })
 vim.keymap.set("n", "gd", "<cmd>ObsidianFollowLink<CR>", { desc = "Switch follow link" })
 
+----- GITHUB -----
+vim.keymap.set("i", "<M-.>", 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+  silent = true,
+  noremap = true,
+})
+vim.g.copilot_no_tab_map = true
+
 -----  OIL -----
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 

@@ -26,20 +26,36 @@ return {
     priority = 1000,
   },
   {
+    "xiyaowong/transparent.nvim",
+  },
+
+  {
+    "sainnhe/everforest",
+    config = function()
+      vim.g.everforest_transparent_background = 1
+      vim.g.everforest_background = "hard"
+      vim.g.everforest_enable_italic = 1
+      vim.g.everforest_float_style = "dim"
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
+    },
+  },
+  {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
     opts = {
       transparent_background = true,
     },
-    priority = 1000,
-  },
-  {
-    "xiyaowong/transparent.nvim",
   },
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "kanagawa-dragon",
     },
+    priority = 1000,
   },
 }
