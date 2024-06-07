@@ -26,6 +26,7 @@ return {
       })
       require("lspinstall").installed_servers()
       require("tsserver").setup({})
+      require("image_preview").setup({})
     end,
   },
 }
