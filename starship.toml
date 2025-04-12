@@ -18,11 +18,11 @@ $line_break\
 $character"""
 
 add_newline = true
-palette = "kanagawa-dragon"
+palette = "everforest-dark-hard"
 
 # Pink mustache icon for the prompt
 [character]
-success_symbol = "[󱗞 ](fg:#85B5BA)" # Mustache in dark pink tone
+success_symbol = "[󱗞 ](fg:blue)" # Mustache in dark pink tone
 error_symbol = "[󱗞 ](fg:red)"       # Mustache in red if there is an error
 
 # User settings
@@ -166,3 +166,16 @@ purple = '#d3869b'
 gray = '#3c3836'
 black = '#282828'
 white = '#ebdbb2'
+
+[palettes.everforest-dark-hard]
+dark_blue = '#2b3d4d'
+blue = '#5b8a9e'
+teal = '#7c9b9f'
+red = '#f28c85'
+orange = '#d87d47'
+green = '#8a9e6f'
+yellow = '#f0c27a'
+purple = '#9e7aa7'
+gray = '#3e4d58'
+black = '#1f282e'
+white = '#d8e2e6'
