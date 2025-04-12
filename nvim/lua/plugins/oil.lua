@@ -1,5 +1,3 @@
--- This file contains the configuration for the oil.nvim plugin in Neovim.
-
 return {
   -- Plugin: oil.nvim
   -- URL: https://github.com/stevearc/oil.nvim

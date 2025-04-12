@@ -1,5 +1,3 @@
--- This file contains the configuration for the obsidian.nvim plugin in Neovim.
-
 return {
   {
     -- Plugin: obsidian.nvim
@@ -19,17 +17,17 @@ return {
       -- Define workspaces for Obsidian
       workspaces = {
         {
-          name = "GentlemanNotes",    -- Name of the workspace
-          path = "~/work/pogo-notes", -- Path to the notes directory
+          name = "PogoNotes", -- Name of the workspace
+          path = "~/work/notes", -- Path to the notes directory
         },
       },
 
       -- Completion settings
       completion = {
-        nvim_cmp = false, -- Disable completion using nvim-cmp
+        min_chars = 2,
       },
 
-      notes_subdir = "limbo",       -- Subdirectory for notes
+      notes_subdir = "limbo", -- Subdirectory for notes
       new_notes_location = "limbo", -- Location for new notes
 
       -- Settings for attachments
@@ -108,33 +106,10 @@ return {
 
       -- Settings for templates
       templates = {
-        subdir = "templates",        -- Subdirectory for templates
+        subdir = "templates", -- Subdirectory for templates
         date_format = "%Y-%m-%d-%a", -- Date format for templates
-        gtime_format = "%H:%M",      -- Time format for templates
-        tags = "",                   -- Default tags for templates
-      },
-    },
-  },
-  {
-    "saghen/blink.cmp",
-    dependencies = { "saghen/blink.compat" },
-    opts = {
-      sources = {
-        default = { "obsidian", "obsidian_new", "obsidian_tags" },
-        providers = {
-          obsidian = {
-            name = "obsidian",
-            module = "blink.compat.source",
-          },
-          obsidian_new = {
-            name = "obsidian_new",
-            module = "blink.compat.source",
-          },
-          obsidian_tags = {
-            name = "obsidian_tags",
-            module = "blink.compat.source",
-          },
-        },
+        gtime_format = "%H:%M", -- Time format for templates
+        tags = "", -- Default tags for templates
       },
     },
   },
