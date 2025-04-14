@@ -1,5 +1,3 @@
--- This file contains the configuration for disabling specific Neovim plugins.
-
 return {
   {
     -- Plugin: bufferline.nvim
