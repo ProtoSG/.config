@@ -43,24 +43,15 @@ return {
   },
 
   {
-    "neanias/everforest-nvim",
-    version = false, -- Use the latest version
-    lazy = false, -- Load this plugin immediately
+    "sainnhe/everforest",
+    lazy = false,
     priority = 1000,
     config = function()
-      require("everforest").setup({
-        background = "hard", -- Set the background to 'hard'
-        italis = true, -- Enable italics
-        transparent_background_level = 1, -- Uncomment to enable transparency
-        diagnostic_text_highlight = true, -- Enable diagnostic text highlight
-        diagnostic_virtual_text = "coloured", -- Set diagnostic virtual text to colored
-        colours_override = function(palette)
-          palette.bg0 = "#1A1A22" -- Override background color
-        end,
-      })
+      vim.g.everforest_background = 'hard'
+      vim.g.everforest_enable_italic = 1
+      vim.g.everforest_better_performance = 1
     end,
   },
-
   {
     -- LazyVim configuration
     "LazyVim/LazyVim",

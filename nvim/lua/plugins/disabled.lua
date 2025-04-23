@@ -1,9 +1,10 @@
 return {
   {
-    -- Plugin: bufferline.nvim
-    -- URL: https://github.com/akinsho/bufferline.nvim
-    -- Description: A snazzy buffer line (with tabpage integration) for Neovim.
+    -- plugin: bufferline.nvim
+    -- url: https://github.com/akinsho/bufferline.nvim
+    -- description: a snazzy buffer line (with tabpage integration) for neovim.
     "akinsho/bufferline.nvim",
-    enabled = false, -- Disable this plugin
+    enabled = false, -- disable this plugin
   },
+  { "echanovski/mini.pairs", enabled=false }
 }
