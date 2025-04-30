@@ -1,5 +1,6 @@
 # Import path from brew donwloads
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Starship
 eval "$(starship init zsh)"
